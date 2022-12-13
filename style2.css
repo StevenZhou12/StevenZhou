@@ -1,0 +1,213 @@
+#text {
+    text-align: center;
+    color: black;
+}
+
+body {
+    background-color: #d6d6d6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* father的功能 */
+.father {
+    display: flex;
+    justify-content: center;
+}
+
+.father .fz {
+    margin-left: 5px;
+}
+
+.father:hover .fz {
+    transition: 1s;
+    /* 设置选择轴 */
+    transform-origin: 0;
+    transform: rotateY(180deg);
+}
+
+/* father1的功能 */
+.father1 {
+    display: flex;
+    justify-content: center;
+}
+
+.father1 .coin {
+    margin-left: 5px;
+}
+
+.yuan {
+   width: 30px;
+   height: 30px;
+   background-color: black;
+   border-radius: 45px;
+}
+
+
+/* father2的功能 */
+.father2 {
+    display: flex;
+    justify-content: center;
+}
+
+.father2 .blue {
+    margin-left: 5px;
+}
+
+.father2 .blue:hover {
+    transition: 0.1s;
+    color: blue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.father3 .father3-one {
+    display: flex;
+    justify-content: center;
+}
+
+/* father3的功能 */
+.weiyi{
+    transition: 1s;
+    transform: translate(580px, 0px);
+}
+
+/* father4的功能 */
+.father4 .line7:hover {
+    transition: 1s;
+    transform: rotate(45deg);
+}
+
+.father4 .line8:hover {
+    transition: 1s;
+    transform: rotate(-30deg);
+}
+
+/* father5的功能 */
+.father5 .line9:hover {
+    transition: 1s;
+    transform: translate(-30px, 0) rotate(90deg);
+}
+
+.father5 .line10 {
+    display: flex;
+    justify-content: center;
+}
+
+.father5 .line10 .into:hover {
+    transition: 1s;
+    transform: rotate(20deg);
+}
+
+.father5 .line10 .wood:hover {
+    transition: 1s;
+    transform: rotate(-10deg);
+}
+
+/* father6的功能 */
+.line12 {
+    display: flex;
+    justify-content: center;
+}
+
+.line12 .hoarse {
+    margin-left: 5px;
+}
+
+.line12 .hoarse:hover {
+    transition: 1s;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* father7的功能 */
+.father7 .line13 {
+    display: flex;
+    justify-content: center;
+}
+
+.father7 .line13 .sung:hover {
+    transition: 1s;
+    transform: translate(30px, -30px) rotate(90deg);
+}
+
+.hover {
+    transition: 1s;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+/* father8的功能 */
+.line15 {
+    display: flex;
+    justify-content: center;
+}
+
+.line15 .air:hover {
+    transition: 1s;
+    transform: translate(0, -20px);
+}
+
+.line15 .t:hover {
+    transition: 1s;
+    transform: rotate(30deg);
+}
+
+.line15 .r:hover {
+    transition: 1s;
+    transform: rotate(-30deg);
+}
+
+.line15 .a:hover {
+    transition: 1s;
+    transform: rotate(90deg);
+}
+
+.line15 .s:hover {
+    transition: 1s;
+    transform: rotate(90deg);
+}
+
+.line15 .h:hover {
+    transition: 1s;
+    transform: rotate(90deg);
+}
+
+.line16 {
+    display: flex;
+    justify-content: center;
+}
+
+.line16 .brushed:hover {
+    transition: 1s;
+    transform: translate(500px, 0);
+}
+
+/* father9的功能 */
+.line17:hover {
+    transition: 1s;
+    transform: translate(-100px, 0);
+}
+
+.line18 {
+    display: flex;
+    justify-content: center;
+}
+
+.line18 .light {
+    margin-left: 5px;
+}
+
+.line18 .light:hover {
+    transition: 1s;
+    color: #C0C0C0;
+    font-weight: 700;
+}
+
+.line18 .like {
+    margin-left: 5px;
+}
+
+.delay {
+    /* 设置延时9999s */
+    transition-delay: 9999s;
+}

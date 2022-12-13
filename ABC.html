@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8" />
+    <title>ABC</title>
+    <style>
+        .div-relative {
+            position: relative;
+            color: #000;
+            border: 1px solid #000;
+            width: 600px;
+            height:800px;
+        }
+        
+        .div-c {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 70;
+            background: #00F;
+           /*   opacity: 0.5;  */
+             background:url(img/bg.png) no-repeat;
+             background-size: 100%;
+             width:100%;
+              height:800px;
+        }
+        span{
+			float:left;
+			width: 100px;
+		  	height:160px;
+		 	/* background-color:pink; */
+		 	text-align: center;
+		 	vertical-align: middle;
+		 	line-height: 160px;
+/* 		  	border:1px solid #999;   */
+		 	background-size: 100%;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="div-relative">
+        <div class="div-c">
+         	<div style="width: 100%">
+         		<span  title="A" style="background-image: url(img/a.png)  ;"  onmouseover="showImg(this,'a')"></span>
+         		<span  title="B"  style="background-image: url(img/b.png)  ;" onmouseover="showImg(this,'b')"></span>
+         		<span  title="C"  style="background-image: url(img/c.png)  ;" onmouseover="showImg(this,'c')"></span>
+         		<span  title="D"  style="background-image: url(img/d.png)  ;"onmouseover="showImg(this,'d')"></span>
+         		<span  title="E"  style="background-image: url(img/e.png)  ;"onmouseover="showImg(this,'e')"></span>
+         		<span  title="F"  style="background-image: url(img/f.png)  ;"onmouseover="showImg(this,'f')"></span>
+         	 </div>
+         	<div style="width: 100%">
+         		<span  title="G"  style="background-image: url(img/g.png)  ;height:130px;"onmouseover="showImg(this,'g')"></span>
+         		<span  title="H"  style="background-image: url(img/h.png)  ;height:130px;"onmouseover="showImg(this,'h')"></span>
+         		<span  title="I"    style="background-image: url(img/i.png)  ;height:130px;"onmouseover="showImg(this,'i')"></span>
+         		<span  title="J"    style="background-image: url(img/j.png)  ;height:130px;"onmouseover="showImg(this,'j')"></span>
+         		<span  title="K"    style="background-image: url(img/k.png)  ;height:130px;"onmouseover="showImg(this,'k')"></span>
+         		<span  title="L"   style="background-image: url(img/l.png)  ;height:130px;"onmouseover="showImg(this,'l')"></span>
+         	 </div>
+         	<div style="width: 100%;">
+         		<span  title="M"  style="background-image: url(img/m.png)  ;width: 125px;height:190px;"onmouseover="showImg(this,'m')"></span>
+         		<span  title="N"  style="background-image: url(img/n.png)  ;width: 120px;height:190px;;"onmouseover="showImg(this,'n')"></span>
+         		<span  title="O"   style="background-image: url(img/o.png)  ;width: 120px;height:190px;"onmouseover="showImg(this,'o')"></span>
+         		<span  title="P"   style="background-image: url(img/p.png)  ;width: 90px;height:190px;"onmouseover="showImg(this,'p')"></span>
+         		<span  title="Q"   style="background-image: url(img/q.png)  ;width: 90px;height:190px;"onmouseover="showImg(this,'q')"></span>
+         	 </div>
+         	<div style="width: 100%">
+         		<span  title="R"  style="background-image: url(img/r.png)  ;"onmouseover="showImg(this,'r')"></span>
+         		<span  title="S"  style="background-image: url(img/s.png)  ;"onmouseover="showImg(this,'s')"></span>
+         		<span  title="T"   style="background-image: url(img/t.png)  ;"onmouseover="showImg(this,'t')"></span>
+         		<span  title="U"  style="background-image: url(img/u.png)  ;"onmouseover="showImg(this,'u')"></span>
+         		<span  title="V"  style="background-image: url(img/v.png)  ;"onmouseover="showImg(this,'v')"></span>
+         		<span  title="W"   style="background-image: url(img/w.png)  ;"onmouseover="showImg(this,'w')"></span>
+         	 </div>
+         	<div style="width: 100%">
+         		<span  title="X"   style="background-image: url(img/x.png)  ;"onmouseover="showImg(this,'x')"></span>
+         		<span  title="Y"  style="background-image: url(img/y.png)  ;" onmouseover="showImg(this,'y')"></span>
+         		<span  title="Z"  style="background-image: url(img/z.png)  ;"onmouseover="showImg(this,'z')"></span>
+         	 </div>
+		</div>
+    </div>
+</body>
+ <script type="text/javascript"> 
+	function showImg(imgObject,id){ 
+		//document.getElementById("wxImg").style.display='block'; 
+		imgObject.style.backgroundImage = 'url(img/ABC/'+id+'.png)';
+		imgObject.style.backgroundSize = '100% 100%';
+	} 
+	function hideImg(){ 
+		//document.getElementById("wxImg").style.display='none'; 
+	} 
+</script> 
+</html>

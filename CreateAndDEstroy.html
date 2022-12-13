@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+<style>
+img{
+    position:absolute;
+    filter:alpha(opacity=100);/* IE */
+    -moz-opacity:1;/* Moz + FF */
+    opacity: 1;
+}
+div{
+	font-size: 160px;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+		<img id="img1"  src="./img/1.png" height="100" width="100">
+        <img id="img2" src="./img/2.png" height="100" width="100">
+        <img id="img3" src="./img/3.png" height="100" width="100">
+        <img  id="img4" src="./img/4.png" height="100" width="100">
+       <div style="padding-top:50px;padding-left:100px"> <a href="RainColor.html">CREATE</a></div>
+       <div style="padding-top:100px;padding-left:500px"> <a href="Rain.html">DESTROY</a></div>
+       <div style="font-size: 12px;padding-top:0px;padding-left:10px; position: relative;">
+       		<span style="padding-top:200px;padding-left:0px; float:left;"> CREATE&DESTROY Art Exhibition</span>
+       		<span style="padding-top:200px;margin-right: 0px; float:right;"> 75 Arkansas St, San Francisco / Jan 01, 2023</span>
+       </div>
+</body>
+</html>
+<script>
+var imgs = document.images;
+var xSpeed = new Array(), ySpeed = new Array(), x = new Array(), y = new Array();
+for(var i=0;i<imgs.length;i++){
+    xSpeed[i] = 10*Math.random(); ySpeed[i] = 10*Math.random();
+    x[i] = i*100* Math.random(); y[i] = i*150* Math.random();
+}
+var w = document.documentElement.clientWidth-110, h = document.documentElement.clientHeight-85;
+function float(){
+    for(var i=0;i<imgs.length;i++){
+        if(x[i]>w || x[i]<0) xSpeed[i] = -xSpeed[i];   
+        if(y[i]>h || y[i]<0) ySpeed[i] = -ySpeed[i];
+        x[i] += xSpeed[i];        
+        y[i] += ySpeed[i];
+        imgs[i].style.left = x[i] + "px";        
+        imgs[i].style.top = y[i] + "px";
+    }
+    a = setTimeout(float, 40);    //clearTimeout(a);
+}
+
+float();        
+</script>
